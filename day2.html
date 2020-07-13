@@ -1,0 +1,32 @@
+<DOCTYPE html>
+    <head>
+        <script>
+            var a=new Date();
+            var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.write("Today is :", days[a.getDay()]); 
+            document.write("<br>");
+            document.write("Current Time is ",a.getHours() ,":",a.getMinutes() , ":",a.getSeconds());
+            document.write("<br>");
+            function printscreen()
+            {
+                window.print();
+               
+
+            }
+           
+           document.write(a.getMonth() ,"-" ,a.getDate() ,"-" , a.getFullYear());
+           document.write("<br>");
+           document.write(a.getMonth() ,"/" ,a.getDate() ,"/" , a.getFullYear());
+           document.write("<br>");
+           document.write(a.getDate() ,"-" ,a.getMonth() ,"-" , a.getFullYear());
+           document.write("<br>");
+           document.write(a.getDate() ,"/" ,a.getMonth() ,"/" , a.getFullYear());
+           document.write("<br>");
+         </script>
+
+        </head>
+        <button type="button" onclick="printscreen()" ></button>
+       
+        <body>
+            <p id="a"></p>
+        </body>
